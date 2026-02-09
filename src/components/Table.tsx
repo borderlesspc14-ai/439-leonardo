@@ -276,7 +276,7 @@ export const DataTable: React.FC<TableProps> = ({
                     )}
                   </td>
                 )}
-                {state.headers.map((header, colIndex) => {
+                {state.headers.map((_header, colIndex) => {
                   // Garante que todas as linhas tenham o mesmo número de colunas que os headers
                   const value = row.columns[colIndex] ?? "";
                   return (
